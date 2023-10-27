@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script>
+        function setusername(){
+            document.getElementById("username-p").innerHTML= document.getElementById("username").value + "'s gallery";
+        }
+        function setprofileImage(){
+            document.getElementById("profileimage").style.background = "url(" + document.getElementById("profileimg").value + ")" ;
+        }
+    </script>
+</head>
+<body>
+    <div class="content">
+        <div class="avatar">
+            <div class="profile-img" id="profileimage" style="background-image: url(unnamed.jpg);">
+
+            </div>
+            <div class="noti">
+                99+
+            </div>
+        </div>
+        <div class="username">
+            <a href="https://github.com/Tonkhaow77546" class="on-hover">
+            <p style="font-size: xx-large; font-weight: 400;" id="username-p">Petchpraethong's Gallery</p>
+            </a>
+        </div>
+        <div class="input">
+            <div><label style="font-weight: 100;">Username</label><input style="margin-left: 10px;" type="text" 
+                id = "username"><button style="margin-left: 10px; "id ="setusername" onclick="setusername()">Apply</button></div>
+
+            <div><label style="font-weight: 100;">Profile Image</label><input style="margin-left: 10px;" type="text"
+                id = "profileimg"><button style="margin-left: 10px;" id ="setprofile" onclick="setprofileImage()">Apply</button></div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-item col-span" style="background-image: url(1024.png);"></div>
+            <div class="gallery-item" style="background-image: url(ab6761610000e5ebc94fb92f8143c3637c6f7b80.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(adventure_time_episode_268_still.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(adventure-time.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(ATDL_TA_Key_Art.0.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(download\ \(1\).jpg);"></div>
+            <div class="gallery-item" style="background-image: url(download\ \(2\).jpg);"></div>
+            <div class="gallery-item row-span" style="background-image: url(fj_princesses_300_wide-f84adf6c953c93c422186bf6d470612c6bc50145-s1100-c50.jpg);" ></div>
+            <div class="gallery-item" style="background-image: url(images.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(l-intro-1634918067.jpg);"></div>
+
+        </div>
+    </div>
+</body>
+</html>
